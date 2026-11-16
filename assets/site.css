@@ -49,7 +49,13 @@ footer p{margin:6px 0}
 .card{background:#fff;border-radius:18px;padding:20px;box-shadow:0 2px 0 var(--line)}
 .card h3{font-size:20px;margin:0 0 6px}
 .card p{margin:0;color:var(--soft);font-size:16px}
-.card .em{font-size:30px;line-height:1;margin-bottom:10px}
+/* feature cards: the game's own art in a soft tile, like the boosters in the game */
+.cards.feat{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cards.feat .card{text-align:center;padding:24px 22px 22px}
+.card .ct{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:8px}
+.card .ct h3{margin:0}
+.card .it{display:grid;place-items:center;width:76px;height:76px;border-radius:22px;background:#F6F1FF;box-shadow:0 4px 0 #E9E0F5}
+.card .it img{width:64px;height:64px}
 section h2.sec{font-size:30px;margin:10px 0 16px}
 .shots{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 18px;margin:0;list-style:none;scroll-snap-type:x mandatory}
 .shots li{flex:none;scroll-snap-align:start}
