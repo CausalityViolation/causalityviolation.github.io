@@ -1,0 +1,64 @@
+/* Causality: shared styles for the studio page and the game pages. One file, no frameworks. */
+@font-face{font-family:Fredoka;font-weight:500;font-display:swap;src:url(fredoka-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Fredoka;font-weight:600;font-display:swap;src:url(fredoka-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Fredoka;font-weight:700;font-display:swap;src:url(fredoka-latin-700-normal.woff2) format("woff2")}
+:root{--ink:#2B2440;--soft:#6B6382;--bg:#FFF9F0;--card:#fff;--line:#EFE6DA;--accent:#FFC857;--accent2:#7FD1AE;--r:22px;--max:1060px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3,.brand{font-family:Fredoka,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.top{display:flex;align-items:center;justify-content:space-between;max-width:var(--max);margin:0 auto;padding:18px 20px}
+.brand{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:700;text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:11px}
+.top nav a{margin-left:18px;text-decoration:none;color:var(--soft);font-weight:600}
+.top nav a:hover{color:var(--ink)}
+.hero{padding:40px 0 30px}
+.hero h1{font-size:clamp(40px,7vw,64px);font-weight:700}
+.eyebrow{margin:0 0 10px;color:var(--soft);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:14px}
+.lead{font-size:19px;color:var(--soft);max-width:640px;margin:16px 0 0}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;padding:20px 0 50px}
+.game{display:flex;flex-direction:column;background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 0 var(--line),0 14px 34px rgba(43,36,64,.08);text-decoration:none;transition:transform .15s,box-shadow .15s}
+.game:hover{transform:translateY(-3px);box-shadow:0 2px 0 var(--line),0 20px 40px rgba(43,36,64,.13)}
+.game .art{aspect-ratio:1024/500;background-size:cover;background-position:center}
+.game .body{display:flex;gap:14px;padding:18px 20px 22px;flex:1}
+.game .ico{width:64px;height:64px;border-radius:16px;flex:none;margin-top:-44px;box-shadow:0 6px 16px rgba(43,36,64,.18);background:#fff}
+.game h2{font-size:24px;font-weight:700}
+.game p{margin:6px 0 0;color:var(--soft);font-size:16px}
+.tag{display:inline-block;margin-top:12px;padding:3px 11px;border-radius:999px;font-size:13px;font-weight:700;background:#E8F7EF;color:#257A52}
+.tag.soon{background:#FFF1D2;color:#8A5A00}
+.about{background:#fff;border-radius:var(--r);padding:28px;margin:10px 0 50px;box-shadow:0 2px 0 var(--line)}
+.about h2{font-size:26px;margin-bottom:8px}
+.about p{margin:8px 0 0;color:var(--soft)}
+footer{border-top:1px solid var(--line);padding:26px 20px 40px;text-align:center;color:var(--soft);font-size:15px}
+footer p{margin:6px 0}
+/* game pages */
+.g-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:30px 0 40px}
+.g-hero .ico{width:96px;height:96px;border-radius:24px;box-shadow:0 8px 22px rgba(43,36,64,.18);margin-bottom:18px}
+.g-hero h1{font-size:clamp(40px,6vw,60px)}
+.tagline{font-family:Fredoka,system-ui,sans-serif;font-size:24px;font-weight:600;margin:8px 0 0}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:24px 0 6px}
+.badge img{height:62px;width:auto}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700}
+.btn.off{background:#E9E2EF;color:#7A6E8C;cursor:default}
+.note{color:var(--soft);font-size:14px;margin:6px 0 0}
+.feature{height:auto;border-radius:var(--r);box-shadow:0 14px 34px rgba(43,36,64,.14)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;padding:10px 0 40px}
+.card{background:#fff;border-radius:18px;padding:20px;box-shadow:0 2px 0 var(--line)}
+.card h3{font-size:20px;margin:0 0 6px}
+.card p{margin:0;color:var(--soft);font-size:16px}
+.card .em{font-size:30px;line-height:1;margin-bottom:10px}
+section h2.sec{font-size:30px;margin:10px 0 16px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 18px;margin:0;list-style:none;scroll-snap-type:x mandatory}
+.shots li{flex:none;scroll-snap-align:start}
+.shots img{width:200px;height:auto;border-radius:16px;box-shadow:0 8px 20px rgba(43,36,64,.14)}
+.fair{background:#fff;border-radius:var(--r);padding:26px;margin:20px 0 50px;box-shadow:0 2px 0 var(--line)}
+.fair p{color:var(--soft)}
+.back{display:inline-block;margin:6px 0 0;color:var(--soft);text-decoration:none;font-weight:600}
+.policy{max-width:760px;margin:0 auto;padding:10px 20px 50px}
+.policy h1{font-size:36px;margin:10px 0 4px}
+.policy h2{font-size:22px;margin:28px 0 6px}
+.policy p,.policy li{color:#3E3654}
+@media (max-width:760px){.g-hero{grid-template-columns:1fr}.top nav a{margin-left:12px;font-size:15px}}
