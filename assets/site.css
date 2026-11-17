@@ -68,3 +68,8 @@ section h2.sec{font-size:30px;margin:10px 0 16px}
 .policy h2{font-size:22px;margin:28px 0 6px}
 .policy p,.policy li{color:#3E3654}
 @media (max-width:760px){.g-hero{grid-template-columns:1fr}.top nav a{margin-left:12px;font-size:15px}}
+
+.about + .support{margin-top:-30px}
+.support-cta{margin-top:16px!important}
+.btn.kofi{display:inline-flex;align-items:center;gap:10px;background:#FF5E5B;box-shadow:0 3px 0 #D9443F}
+.btn.kofi:hover{background:#F04F4C}
