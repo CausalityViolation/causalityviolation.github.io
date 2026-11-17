@@ -1,4 +1,6 @@
 /* Kawarimi Interactive: shared styles for the studio page and the game pages. One file, no frameworks. */
+@font-face{font-family:Outfit;font-weight:400;font-display:swap;src:url(outfit-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Outfit;font-weight:600;font-display:swap;src:url(outfit-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:Fredoka;font-weight:500;font-display:swap;src:url(fredoka-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:Fredoka;font-weight:600;font-display:swap;src:url(fredoka-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:Fredoka;font-weight:700;font-display:swap;src:url(fredoka-latin-700-normal.woff2) format("woff2")}
@@ -6,13 +8,15 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
-h1,h2,h3,.brand{font-family:Fredoka,system-ui,sans-serif;line-height:1.15;margin:0}
+h1,h2,h3{font-family:Fredoka,system-ui,sans-serif;line-height:1.15;margin:0}
 a{color:inherit}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
 .top{display:flex;align-items:center;justify-content:space-between;max-width:var(--max);margin:0 auto;padding:18px 20px}
-.brand{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:700;text-decoration:none}
-.brand img{width:40px;height:40px;border-radius:11px}
+/* the studio logo: sprout-k mark + lowercase Outfit wordmark */
+.brand{display:flex;align-items:center;gap:6px;font-family:Outfit,system-ui,sans-serif;font-size:25px;font-weight:600;letter-spacing:-.6px;line-height:1;text-decoration:none;color:#1F1B2E}
+.brand img{width:46px;height:46px;margin:-3px -2px -3px -6px}
+.brand i{font-style:normal;font-weight:400;color:#9A95A6}
 .top nav a{margin-left:18px;text-decoration:none;color:var(--soft);font-weight:600}
 .top nav a:hover{color:var(--ink)}
 .hero{padding:40px 0 30px}
