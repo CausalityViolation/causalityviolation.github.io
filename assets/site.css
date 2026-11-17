@@ -1,4 +1,4 @@
-/* Causality: shared styles for the studio page and the game pages. One file, no frameworks. */
+/* Kawarimi Interactive: shared styles for the studio page and the game pages. One file, no frameworks. */
 @font-face{font-family:Fredoka;font-weight:500;font-display:swap;src:url(fredoka-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:Fredoka;font-weight:600;font-display:swap;src:url(fredoka-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:Fredoka;font-weight:700;font-display:swap;src:url(fredoka-latin-700-normal.woff2) format("woff2")}
@@ -73,3 +73,6 @@ section h2.sec{font-size:30px;margin:10px 0 16px}
 .support-cta{margin-top:16px!important}
 .btn.kofi{display:inline-flex;align-items:center;gap:10px;background:#FF5E5B;box-shadow:0 3px 0 #D9443F}
 .btn.kofi:hover{background:#F04F4C}
+/* the studio name is long: on phones the menu goes on its own line under it */
+.brand{white-space:nowrap}
+@media (max-width:640px){.top{flex-wrap:wrap;row-gap:10px}.top nav{width:100%;display:flex;flex-wrap:wrap;gap:4px 18px}.top nav a{margin-left:0}}
